@@ -1,0 +1,48 @@
+body {
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background-color: #f0f8ff; /* Alice Blue */
+    color: #000080; /* Navy */
+}
+
+.navbar {
+    background-color: #4682b4; /* Steel Blue */
+}
+
+.navbar-nav li {
+    margin-right: 15px;
+}
+
+.navbar-brand, .navbar-nav .nav-link {
+    color: #ffffff; /* White */
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff; /* White */
+}
+
+.navbar-toggler {
+    border-color: #4682b4; /* Steel Blue */
+}
+
+.navbar-toggler:focus, .navbar-toggler:active {
+    outline: none;
+    box-shadow: none;
+}
+
+.container {
+    background-color: #f5f5dc; /* Beige */
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 139, 0.3); /* Dark Blue */
+}
+
+h2 {
+    color: #4682b4; /* Steel Blue */
+    font-weight: bold;
+    margin-bottom: 25px;
+}
+
+p {
+    color: #000080; /* Navy */
+    line-height: 1.8;
+}

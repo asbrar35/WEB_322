@@ -5,8 +5,8 @@ I declare that this assignment is my own work in accordance with Seneca Academic
 Name: Amardeep Singh Brar
 Student ID: 172282220
 Date: 2024-06-15
-Vercel Web App URL: [Your Vercel URL]
-GitHub Repository URL: [Your GitHub URL]
+Vercel Web App URL: https://web-322-azure.vercel.app/shop
+GitHub Repository URL: https://github.com/asbrar35/WEB_322
 
 ********************************************************************************/
 

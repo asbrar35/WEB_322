@@ -1,5 +1,5 @@
 /*********************************************************************************
-WEB322 – Assignment 02
+WEB322 – Assignment 05
 I declare that this assignment is my own work in accordance with Seneca Academic Policy.  No part of this assignment has been copied manually or electronically from any other source (including 3rd party web sites) or distributed to other students.
 
 Name: Amardeep Singh Brar
@@ -9,6 +9,7 @@ Vercel Web App URL: https://web-322-azure.vercel.app/shop
 GitHub Repository URL: https://github.com/asbrar35/WEB_322
 
 ********************************************************************************/
+
 
 const express = require('express');
 const path = require('path');
@@ -236,6 +237,28 @@ app.post('/items/add', upload.single('featureImage'), (req, res) => {
                 res.status(500).json({ message: "Error adding item: " + error });
             });
     }
+});
+
+app.get('/categories/add', (req, res) => {
+    res.render('addCategory');
+});
+
+app.post('/categories/add', (req, res) => {
+    storeService.addCategory(req.body)
+        .then(() => res.redirect('/categories'))
+        .catch(err => res.status(500).send("Unable to add category"));
+});
+
+app.get('/categories/delete/:id', (req, res) => {
+    storeService.deleteCategoryById(req.params.id)
+        .then(() => res.redirect('/categories'))
+        .catch(err => res.status(500).send("Unable to remove category / Category not found"));
+});
+
+app.get('/items/delete/:id', (req, res) => {
+    storeService.deleteItemById(req.params.id)
+        .then(() => res.redirect('/items'))
+        .catch(err => res.status(500).send("Unable to remove item / Item not found"));
 });
 
 app.use(function(req, res, next) {

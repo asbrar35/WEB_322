@@ -1,6 +1,6 @@
-const Sequelize = require('sequelize');
-var sequelize = new Sequelize('database', 'user', 'password', {
-    host: 'host',
+  const Sequelize = require('sequelize');
+  var sequelize = new Sequelize('SenecaDB', 'SenecaDB_owner', 'Hf2gap7IxBTr', {
+    host: 'ep-holy-resonance-a5e9582f.us-east-2.aws.neon.tech',
     dialect: 'postgres',
     port: 5432,
     dialectOptions: {
